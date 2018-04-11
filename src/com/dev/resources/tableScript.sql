@@ -1,0 +1,14 @@
+DROP TABLE Task CASCADE CONSTRAINTS;
+
+DROP SEQUENCE hibernate_sequence;
+
+CREATE SEQUENCE hibernate_sequence START WITH 1001 INCREMENT BY 1;
+
+
+CREATE TABLE Task(
+    TaskId varchar2(15)NOT NULL PRIMARY KEY,
+    TaskName varchar2(100) NOT NULL
+);
+
+
+COMMIT;
